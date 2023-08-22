@@ -1,0 +1,51 @@
+
+* Get include paths:
+    - cpp -v (Provides a list of directories to find the header files, the ones included with "..." and <...>)
+
+* Tell the compiler header file paths:
+    - g++ -I(path) 
+
+* Tell the compiler binary file paths:
+    - g++ -L(path)
+
+* Add a dynamic library to the compiler as an application dependency:
+    - g++ -l(namelib without lib and .so)
+
+* Show all warnings when compiling:
+    - g++ -Wall
+
+* Instrument the code so that it warns when trying to access memory that does not belong to the process:
+    - g++ -fsanitize=address
+
+* Indicate the level of optimization:
+    - g++ -O3
+
+* Export as assembler:
+    - g++ -S
+
+* Compile using threads:
+    - g++ -pthread
+
+* Start of code area in assembler:
+    - .text
+
+* Emulator that allows you to see the resources of the process throughout its life cycle:
+    - valgrind ./nameApp
+
+* Find out the type of a lambda:
+    - decltype (nameLambda)
+
+* The this pointer is the first parameter of all methods of a class.
+
+* All static types exist throughout the life cycle of the process.
+
+* The standard C++ type library is cstdint.
+
+* A function without parameters means that it has an arbitrary number of parameters.
+
+* C++ has mangling, it allows you to give names to functions, C doesn't. 
+    To include libraries written in C in C++, wrap the include with:
+    extern "C" { 
+        #include <lib> 
+    }
+
