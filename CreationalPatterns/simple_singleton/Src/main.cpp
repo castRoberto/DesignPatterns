@@ -2,7 +2,7 @@
 #include "SimpleSingleton.h"
 
 
-int main () {
+int main (int argc, char* argv[]) {
 
     SimpleSingleton& simpleSingleton_1 = SimpleSingleton::getInstance();
 
