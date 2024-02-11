@@ -13,11 +13,11 @@ IGeographicElement* GeographicElementFactory::createGeographicElement (eGeograph
 
     switch (type) {
         case eGeographicElement_POINT : {
-            new Point (); 
+            return new Point (); 
             break;
         }
         case eGeographicElement_CIRCLE : {
-            new Circle (); 
+            return new Circle (); 
             break;
         }
         default: {

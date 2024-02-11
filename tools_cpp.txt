@@ -23,6 +23,13 @@
 * Export as assembler:
     - g++ -S
 
+* Stop compiller in preprocessor step:
+    - g++ -E
+    - Ej: g++ -E -o main.i main.c
+
+* Indicate linker file to map memory of arquitecture:
+    - g++ -T Xlinker
+
 * Compile using threads:
     - g++ -pthread
 
@@ -41,6 +48,9 @@
 
 * The standard C++ type library is cstdint.
 
+* Add macro in compilling invocation:
+    - g++ -D<MACRO-NAME> -o main.out main.c
+
 * A function without parameters means that it has an arbitrary number of parameters.
 
 * C++ has mangling, it allows you to give names to functions, C doesn't. 
@@ -49,3 +59,5 @@
         #include <lib> 
     }
 
+* Error during compillin if use printf or poison function:
+    -#pracma GCC printf poison

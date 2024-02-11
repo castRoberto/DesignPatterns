@@ -26,6 +26,9 @@ int main (int argc, char* argv[]) {
 
     LOG (egeoCircle->toString ());
 
+    delete egeoPoint;
+    delete egeoCircle;
+
 
     return 0;
 }
