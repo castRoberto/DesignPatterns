@@ -6,9 +6,6 @@ class IBuilder {
 
 public:
 
-    IBuilder () {};
-    ~IBuilder () {};
-
     virtual T* build () = 0;
 
 };

@@ -39,10 +39,10 @@ public:
         CarBuilder* doors (uint8_t doors) override;
         CarBuilder* capacity (uint16_t capacity) override;
 
-        std::string mark () override;
-        uint8_t tires () override;
-        uint8_t doors () override;
-        uint16_t capacity () override;
+        std::string mark () const override;
+        uint8_t tires () const override;
+        uint8_t doors () const override;
+        uint16_t capacity () const override;
 
         Car* build () override;
 

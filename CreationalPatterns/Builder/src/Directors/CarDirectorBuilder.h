@@ -6,14 +6,14 @@
 /**
  * @brief Enumerated for car types
 */
-typedef enum {
+enum class eCarType {
 
     eCarType_SPORT = 0,   // 0
     eCarType_CLASIC,      // 1
 
     eCarType_
 
-} eCarType;
+};
 
 
 /**
@@ -31,14 +31,14 @@ public:
     void manageBuild (ICarBuilder <T_Builder, T_Product>* builder, eCarType type) {
         
         switch (type) {
-            case eCarType_CLASIC: {
+            case eCarType::eCarType_CLASIC: {
 
                 builder->capacity (200)->doors (4)->mark ("Mazda");
                 break;
 
             }
 
-            case eCarType_SPORT: {
+            case eCarType::eCarType_SPORT: {
 
                 builder->capacity (120)->tires (2)->mark ("Ferrari");
                 break;

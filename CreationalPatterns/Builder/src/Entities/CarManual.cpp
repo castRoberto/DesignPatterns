@@ -56,19 +56,19 @@ CarManual::CarManualBuilder* CarManual::CarManualBuilder::capacity (uint16_t cap
     return this;
 }
        
-std::string CarManual::CarManualBuilder::mark () {
+std::string CarManual::CarManualBuilder::mark () const {
     return this->_mark;
 }
 
-uint8_t CarManual::CarManualBuilder::tires () {
+uint8_t CarManual::CarManualBuilder::tires () const {
     return this->_tires;
 }
 
-uint8_t CarManual::CarManualBuilder::doors () {
+uint8_t CarManual::CarManualBuilder::doors () const {
     return this->_doors;
 }
 
-uint16_t CarManual::CarManualBuilder::capacity () {
+uint16_t CarManual::CarManualBuilder::capacity () const {
     return this->_capacity;
 }
 

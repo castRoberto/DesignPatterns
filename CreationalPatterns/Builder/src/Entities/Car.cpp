@@ -50,19 +50,19 @@ Car::CarBuilder* Car::CarBuilder::capacity (uint16_t capacity) {
     return this;
 }
        
-std::string Car::CarBuilder::mark () {
+std::string Car::CarBuilder::mark () const {
     return this->_mark;
 }
 
-uint8_t Car::CarBuilder::tires () {
+uint8_t Car::CarBuilder::tires () const {
     return this->_tires;
 }
 
-uint8_t Car::CarBuilder::doors () {
+uint8_t Car::CarBuilder::doors () const {
     return this->_doors;
 }
 
-uint16_t Car::CarBuilder::capacity () {
+uint16_t Car::CarBuilder::capacity () const {
     return this->_capacity;
 }
 
